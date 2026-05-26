@@ -1,0 +1,44 @@
+@import "@styles/variables.scss";
+
+.mainPage {
+  padding: 0 85px;
+
+  &__hero {
+    max-width: 1380px;
+    background-color: $bg-secondary;
+    border-radius: 43px;
+    margin: 142px auto 0 auto;
+    padding: 140px 0 0 55px;
+    height: 638px;
+
+    position: relative;
+    min-height: 400px;
+
+    color: $font-primary;
+
+    img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: auto;
+      object-fit: cover;
+
+    }
+
+    &Info {
+      position: relative;
+      z-index: 1;
+
+      &Title {
+        font-size: 48px;
+      }
+
+      &Description {
+        font-size: 20px;
+        max-width: 580px;
+        margin-top: 32px;
+        margin-bottom: 102px;
+      }
+    }
+  }
+}
