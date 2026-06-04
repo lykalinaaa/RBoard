@@ -4,11 +4,10 @@
   padding: 0 85px;
 
   &__hero {
-    max-width: 1380px;
     background-color: $bg-secondary;
     border-radius: 43px;
     margin: 142px auto 0 auto;
-    padding: 140px 0 0 55px;
+    padding: 140px 55px 0 55px;
     height: 638px;
 
     position: relative;
@@ -40,5 +39,147 @@
         margin-bottom: 102px;
       }
     }
+  }
+
+  section {
+    color: $font-primary;
+    padding: 127px 0 0 0;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .title {
+      font-size: 48px;
+    }
+
+    .content {
+      display: flex;
+      gap: 66px;
+      flex-wrap: wrap;
+      margin-top: 48px;
+      justify-content: center;
+    }
+
+    .list {
+      margin-top: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+
+      img {
+        display: inline;
+        margin-right: 16px;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .oppCard {
+      border-radius: 25px;
+      padding: 0 41px;
+      max-width: 379px;
+      min-height: 378px;
+
+      &:hover {
+        box-shadow: 6px 6px 5px 0 rgb(0, 0, 0, 0.25);
+      }
+
+      &__header {
+        border-radius: 0 0 12px 12px;
+        margin-bottom: 60px;
+        padding: 30px 20px 15px 20px;
+        color: $font-secondary;
+        font-size: 20px;
+        text-align: center;
+
+        &Orange {
+          background-color: $bg-orange-dark;
+        }
+
+        &Green {
+          background-color: $bg-green-dark;
+        }
+
+        &Purple {
+          background-color: $bg-purple-dark;
+        }
+      }
+    }
+
+    .orange {
+      background-color: $bg-orange;
+    }
+
+    .green {
+      background-color: $bg-green;
+    }
+
+    .purple {
+      background-color: $bg-purple;
+    }
+
+    .workCard {
+      max-width: 379px;
+      flex: 1;
+
+      &__header {
+        background-color: $bg-blue;
+        border-radius: 12px;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      &__content {
+        padding: 26px 29px;
+        background-color: $bg-secondary;
+        margin-top: 38px;
+        border-radius: 25px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        &Title {
+          font-weight: 700;
+        }
+
+        &Description {
+          margin-top: 11px;
+        }
+
+        &Checkbox {
+          align-self: end;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 266px;
+  background-color: $bg-accent;
+  border-radius: 43px 43px 0 0;
+  height: 492px;
+  color: $font-secondary;
+  padding: 75px 85px;
+
+  h2 {
+    font-size: 48px;
+    margin-bottom: 45px;
+  }
+
+  img {
+    display: inline;
+    margin-right: 16px;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
   }
 }
