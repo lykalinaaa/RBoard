@@ -7,7 +7,7 @@ export default function MainHeader() {
     <div className={styles.mainMenu}>
       <div className={styles.mainMenu__logoWrapper}>
         <img src={'/images/logo.svg'} alt={'R'} className={styles.mainMenu__logo} />
-        <Button variant="primary">
+        <Button variant="primary" className={styles.mainMenu__project}>
           О проекте
         </Button>
        </div>

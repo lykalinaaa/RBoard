@@ -3,7 +3,7 @@ import MainHeader from '@/Widgets/MainHeader/ui/MainHeader.tsx';
 import Button from '@/Shared/ui/Button/ui/Button.tsx';
 export default function MainPage() {
   return (
-    <>
+    <div>
     <div className={styles.mainPage}>
       <MainHeader />
       <div className={styles.mainPage__hero}>
@@ -123,6 +123,6 @@ export default function MainPage() {
           <span>lykalinz@gmail.com</span>
         </p>
       </footer>
-    </>
+    </div>
   );
 }
