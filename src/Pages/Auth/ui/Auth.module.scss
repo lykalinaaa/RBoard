@@ -1,0 +1,13 @@
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+
+auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__form {
+    background-color: $bg-blue;
+    border-radius: 25px;
+  }
+}

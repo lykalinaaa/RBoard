@@ -1,7 +1,14 @@
 import styles from './MainPage.module.scss'
 import MainHeader from '@/Widgets/MainHeader/ui/MainHeader.tsx';
 import Button from '@/Shared/ui/Button/ui/Button.tsx';
+import {Link, useNavigate} from "react-router-dom";
 export default function MainPage() {
+  const navigate = useNavigate();
+
+  const goToProfile = () => {
+    navigate('/profile');
+  };
+
   return (
     <div>
     <div className={styles.mainPage}>
@@ -12,9 +19,11 @@ export default function MainPage() {
           <h1 className={styles.mainPage__heroInfoTitle}>Все задачи - в одном месте!</h1>
           <p className={styles.mainPage__heroInfoDescription}>Создавайте доски, ставьте задачи, отслеживайте прогресс -
             всё, что нужно для продуктивной работы</p>
-          <Button variant={'secondary'}>
-            Начать работу
-          </Button>
+          <Link to="/profile" className={styles.linkNoDecor}>
+            <Button variant={'secondary'} onClick={goToProfile}>
+              Начать работу
+            </Button>
+          </Link>
         </div>
       </div>
       <section>
@@ -89,9 +98,11 @@ export default function MainPage() {
           <h2 className={styles.title}>
             Почему выбирают нас
           </h2>
-          <Button variant={'secondary'}>
-            Стать частью RBoard
-          </Button>
+          <Link to="/profile" className={styles.linkNoDecor}>
+            <Button variant={'secondary'} onClick={goToProfile}>
+              Стать частью RBoard
+            </Button>
+          </Link>
         </div>
         <div className={styles.list}>
           <p>
